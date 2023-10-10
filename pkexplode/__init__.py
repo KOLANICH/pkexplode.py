@@ -11,6 +11,7 @@ from .ctypes import _decompressStream
 
 __all__ = ("decompressStreamToStream", "decompressStreamToBytes", "decompressBytesWholeToStream", "decompressBytesChunkedToStream", "decompressBytesChunkedToBytes", "decompress")
 
+warn("We have moved from M$ GitHub to https://codeberg.org/implode-compression-impls/pkexplode.py , read why on https://codeberg.org/KOLANICH/Fuck-GuanTEEnomo .")
 
 def crc32(data: ByteString, value: int = 0) -> int:
 	return (~crc32_zlib(data, value)) & 0xFFFFFFFF
